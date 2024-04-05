@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF8238B82BBF728000B0146A /* FireTranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238B72BBF728000B0146A /* FireTranslatorApp.swift */; };
+		BF8238BA2BBF728000B0146A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238B92BBF728000B0146A /* ContentView.swift */; };
+		BF8238BC2BBF728100B0146A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8238BB2BBF728100B0146A /* Assets.xcassets */; };
+		BF8238BF2BBF728100B0146A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8238BE2BBF728100B0146A /* Preview Assets.xcassets */; };
+		BF8238C92BBF728200B0146A /* FireTranslatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238C82BBF728200B0146A /* FireTranslatorTests.swift */; };
+		BF8238D32BBF728200B0146A /* FireTranslatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238D22BBF728200B0146A /* FireTranslatorUITests.swift */; };
+		BF8238D52BBF728200B0146A /* FireTranslatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238D42BBF728200B0146A /* FireTranslatorUITestsLaunchTests.swift */; };
+		BF8238E22BC0384000B0146A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF8238E12BC0384000B0146A /* GoogleService-Info.plist */; };
+		BF8238E52BC03A8D00B0146A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BF8238E42BC03A8D00B0146A /* FirebaseAuth */; };
+		BF8238E72BC03A8D00B0146A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BF8238E62BC03A8D00B0146A /* FirebaseFirestore */; };
+		BF8238E92BC03A8D00B0146A /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BF8238E82BC03A8D00B0146A /* FirebaseFirestoreSwift */; };
+		BF8238EB2BC03AFE00B0146A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238EA2BC03AFE00B0146A /* LoginView.swift */; };
+		BF8238ED2BC03DE000B0146A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238EC2BC03DE000B0146A /* AuthManager.swift */; };
+		BF8238EF2BC0467600B0146A /* translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238EE2BC0467600B0146A /* translation.swift */; };
+		BF8238F12BC0490300B0146A /* TranslationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8238F02BC0490300B0146A /* TranslationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF8238C52BBF728200B0146A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8238AC2BBF728000B0146A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8238B32BBF728000B0146A;
+			remoteInfo = FireTranslator;
+		};
+		BF8238CF2BBF728200B0146A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF8238AC2BBF728000B0146A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8238B32BBF728000B0146A;
+			remoteInfo = FireTranslator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF8238B42BBF728000B0146A /* FireTranslator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireTranslator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8238B72BBF728000B0146A /* FireTranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTranslatorApp.swift; sourceTree = "<group>"; };
+		BF8238B92BBF728000B0146A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BF8238BB2BBF728100B0146A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8238BE2BBF728100B0146A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BF8238C42BBF728200B0146A /* FireTranslatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireTranslatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8238C82BBF728200B0146A /* FireTranslatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTranslatorTests.swift; sourceTree = "<group>"; };
+		BF8238CE2BBF728200B0146A /* FireTranslatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireTranslatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8238D22BBF728200B0146A /* FireTranslatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTranslatorUITests.swift; sourceTree = "<group>"; };
+		BF8238D42BBF728200B0146A /* FireTranslatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireTranslatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF8238E12BC0384000B0146A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF8238EA2BC03AFE00B0146A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BF8238EC2BC03DE000B0146A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		BF8238EE2BC0467600B0146A /* translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = translation.swift; sourceTree = "<group>"; };
+		BF8238F02BC0490300B0146A /* TranslationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF8238B12BBF728000B0146A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8238E52BC03A8D00B0146A /* FirebaseAuth in Frameworks */,
+				BF8238E72BC03A8D00B0146A /* FirebaseFirestore in Frameworks */,
+				BF8238E92BC03A8D00B0146A /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8238C12BBF728200B0146A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8238CB2BBF728200B0146A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF8238AB2BBF728000B0146A = {
+			isa = PBXGroup;
+			children = (
+				BF8238B62BBF728000B0146A /* FireTranslator */,
+				BF8238C72BBF728200B0146A /* FireTranslatorTests */,
+				BF8238D12BBF728200B0146A /* FireTranslatorUITests */,
+				BF8238B52BBF728000B0146A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF8238B52BBF728000B0146A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8238B42BBF728000B0146A /* FireTranslator.app */,
+				BF8238C42BBF728200B0146A /* FireTranslatorTests.xctest */,
+				BF8238CE2BBF728200B0146A /* FireTranslatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF8238B62BBF728000B0146A /* FireTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				BF8238B72BBF728000B0146A /* FireTranslatorApp.swift */,
+				BF8238EC2BC03DE000B0146A /* AuthManager.swift */,
+				BF8238B92BBF728000B0146A /* ContentView.swift */,
+				BF8238F02BC0490300B0146A /* TranslationManager.swift */,
+				BF8238EE2BC0467600B0146A /* translation.swift */,
+				BF8238BB2BBF728100B0146A /* Assets.xcassets */,
+				BF8238E12BC0384000B0146A /* GoogleService-Info.plist */,
+				BF8238BD2BBF728100B0146A /* Preview Content */,
+				BF8238EA2BC03AFE00B0146A /* LoginView.swift */,
+			);
+			path = FireTranslator;
+			sourceTree = "<group>";
+		};
+		BF8238BD2BBF728100B0146A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BF8238BE2BBF728100B0146A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BF8238C72BBF728200B0146A /* FireTranslatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8238C82BBF728200B0146A /* FireTranslatorTests.swift */,
+			);
+			path = FireTranslatorTests;
+			sourceTree = "<group>";
+		};
+		BF8238D12BBF728200B0146A /* FireTranslatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8238D22BBF728200B0146A /* FireTranslatorUITests.swift */,
+				BF8238D42BBF728200B0146A /* FireTranslatorUITestsLaunchTests.swift */,
+			);
+			path = FireTranslatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF8238B32BBF728000B0146A /* FireTranslator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8238D82BBF728200B0146A /* Build configuration list for PBXNativeTarget "FireTranslator" */;
+			buildPhases = (
+				BF8238B02BBF728000B0146A /* Sources */,
+				BF8238B12BBF728000B0146A /* Frameworks */,
+				BF8238B22BBF728000B0146A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FireTranslator;
+			packageProductDependencies = (
+				BF8238E42BC03A8D00B0146A /* FirebaseAuth */,
+				BF8238E62BC03A8D00B0146A /* FirebaseFirestore */,
+				BF8238E82BC03A8D00B0146A /* FirebaseFirestoreSwift */,
+			);
+			productName = FireTranslator;
+			productReference = BF8238B42BBF728000B0146A /* FireTranslator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF8238C32BBF728200B0146A /* FireTranslatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8238DB2BBF728200B0146A /* Build configuration list for PBXNativeTarget "FireTranslatorTests" */;
+			buildPhases = (
+				BF8238C02BBF728200B0146A /* Sources */,
+				BF8238C12BBF728200B0146A /* Frameworks */,
+				BF8238C22BBF728200B0146A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8238C62BBF728200B0146A /* PBXTargetDependency */,
+			);
+			name = FireTranslatorTests;
+			productName = FireTranslatorTests;
+			productReference = BF8238C42BBF728200B0146A /* FireTranslatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF8238CD2BBF728200B0146A /* FireTranslatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8238DE2BBF728200B0146A /* Build configuration list for PBXNativeTarget "FireTranslatorUITests" */;
+			buildPhases = (
+				BF8238CA2BBF728200B0146A /* Sources */,
+				BF8238CB2BBF728200B0146A /* Frameworks */,
+				BF8238CC2BBF728200B0146A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8238D02BBF728200B0146A /* PBXTargetDependency */,
+			);
+			name = FireTranslatorUITests;
+			productName = FireTranslatorUITests;
+			productReference = BF8238CE2BBF728200B0146A /* FireTranslatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF8238AC2BBF728000B0146A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					BF8238B32BBF728000B0146A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					BF8238C32BBF728200B0146A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BF8238B32BBF728000B0146A;
+					};
+					BF8238CD2BBF728200B0146A = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = BF8238B32BBF728000B0146A;
+					};
+				};
+			};
+			buildConfigurationList = BF8238AF2BBF728000B0146A /* Build configuration list for PBXProject "FireTranslator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF8238AB2BBF728000B0146A;
+			packageReferences = (
+				BF8238E32BC03A8D00B0146A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = BF8238B52BBF728000B0146A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF8238B32BBF728000B0146A /* FireTranslator */,
+				BF8238C32BBF728200B0146A /* FireTranslatorTests */,
+				BF8238CD2BBF728200B0146A /* FireTranslatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF8238B22BBF728000B0146A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8238BF2BBF728100B0146A /* Preview Assets.xcassets in Resources */,
+				BF8238BC2BBF728100B0146A /* Assets.xcassets in Resources */,
+				BF8238E22BC0384000B0146A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8238C22BBF728200B0146A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8238CC2BBF728200B0146A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF8238B02BBF728000B0146A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8238EB2BC03AFE00B0146A /* LoginView.swift in Sources */,
+				BF8238F12BC0490300B0146A /* TranslationManager.swift in Sources */,
+				BF8238ED2BC03DE000B0146A /* AuthManager.swift in Sources */,
+				BF8238BA2BBF728000B0146A /* ContentView.swift in Sources */,
+				BF8238B82BBF728000B0146A /* FireTranslatorApp.swift in Sources */,
+				BF8238EF2BC0467600B0146A /* translation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8238C02BBF728200B0146A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8238C92BBF728200B0146A /* FireTranslatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8238CA2BBF728200B0146A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8238D52BBF728200B0146A /* FireTranslatorUITestsLaunchTests.swift in Sources */,
+				BF8238D32BBF728200B0146A /* FireTranslatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF8238C62BBF728200B0146A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8238B32BBF728000B0146A /* FireTranslator */;
+			targetProxy = BF8238C52BBF728200B0146A /* PBXContainerItemProxy */;
+		};
+		BF8238D02BBF728200B0146A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8238B32BBF728000B0146A /* FireTranslator */;
+			targetProxy = BF8238CF2BBF728200B0146A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BF8238D62BBF728200B0146A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF8238D72BBF728200B0146A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8238D92BBF728200B0146A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FireTranslator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = g.FireTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF8238DA2BBF728200B0146A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FireTranslator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = g.FireTranslator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF8238DC2BBF728200B0146A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = g.FireTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireTranslator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FireTranslator";
+			};
+			name = Debug;
+		};
+		BF8238DD2BBF728200B0146A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = g.FireTranslatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FireTranslator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FireTranslator";
+			};
+			name = Release;
+		};
+		BF8238DF2BBF728200B0146A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = g.FireTranslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FireTranslator;
+			};
+			name = Debug;
+		};
+		BF8238E02BBF728200B0146A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = g.FireTranslatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FireTranslator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF8238AF2BBF728000B0146A /* Build configuration list for PBXProject "FireTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8238D62BBF728200B0146A /* Debug */,
+				BF8238D72BBF728200B0146A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8238D82BBF728200B0146A /* Build configuration list for PBXNativeTarget "FireTranslator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8238D92BBF728200B0146A /* Debug */,
+				BF8238DA2BBF728200B0146A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8238DB2BBF728200B0146A /* Build configuration list for PBXNativeTarget "FireTranslatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8238DC2BBF728200B0146A /* Debug */,
+				BF8238DD2BBF728200B0146A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8238DE2BBF728200B0146A /* Build configuration list for PBXNativeTarget "FireTranslatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8238DF2BBF728200B0146A /* Debug */,
+				BF8238E02BBF728200B0146A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF8238E32BC03A8D00B0146A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF8238E42BC03A8D00B0146A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF8238E32BC03A8D00B0146A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BF8238E62BC03A8D00B0146A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF8238E32BC03A8D00B0146A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BF8238E82BC03A8D00B0146A /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF8238E32BC03A8D00B0146A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BF8238AC2BBF728000B0146A /* Project object */;
+}
